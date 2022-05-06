@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Todo_list.ORANGE"
+    tools:context=".screens.AddingContent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewingCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/HeaderTVAdding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="casual"
+            android:text="@string/unnameTV"
+            android:textAlignment="center"
+            android:textColor="#EF6C00"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:theme="@style/Theme.Todo_list.ORANGE"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/titleItemTVAdding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|fill_vertical"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="@string/titleItemTV"
+            android:textAlignment="center"
+            android:textColor="#EF6C00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleInputAdding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="@color/primaryColorGray"
+            app:boxBackgroundColor="@color/primaryLightColorYellow"
+            app:boxBackgroundMode="filled"
+            app:boxCollapsedPaddingTop="0dp"
+            app:boxStrokeColor="@color/primaryColorOrange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titleInputAddingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#616161"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/extraDescriptionTVAdding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|fill_vertical"
+            android:layout_marginTop="320dp"
+            android:gravity="center"
+            android:text="@string/extraDescriptionTV"
+            android:textAlignment="center"
+            android:textColor="#EF6C00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/extraDescriptionInputAdding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:textColorHint="@color/primaryColorGray"
+            app:boxBackgroundColor="@color/primaryLightColorYellow"
+            app:boxCollapsedPaddingTop="0dp"
+            app:boxStrokeColor="@color/primaryColorOrange"
+            app:helperText="*Здесь вы можете подробно описать, чем же вы будете заниматься (необязательно)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/extraDescriptionInputAddingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#BF360C"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewingCardView"
+        tools:ignore="TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">todo_list</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="AddItem">Добавить</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="todo">TODO</string>
+    <string name="textview">TextView</string>
+    <string name="unnameTV">Что вы хотите добавить в список дел?</string>
+    <string name="titleItemTV">Название</string>
+    <string name="InputTV">Название</string>
+    <string name="extraDescriptionTV">Введите дополнительное описание</string>
+    <string name="extraDescription">Дополнительное описание</string>
+    <string name="Add">Добавить</string>
+    <string name="extraDescriptionTVViewing">Дополнительное описание</string>
+    <string name="Back">Вернуться к списку</string>
+    <string name="HeaderTVViewing">Вот что вы запланировали</string>
+    <string name="titleViewing">TextView</string>
+    <string name="extraDescriptionViewing">TextView</string>
+</resources>

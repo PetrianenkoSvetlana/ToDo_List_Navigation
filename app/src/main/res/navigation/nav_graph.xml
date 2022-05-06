@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/contentMain">
+    <fragment
+        android:id="@+id/viewingContent"
+        android:name="com.example.todo_list.screens.ViewingContent"
+        android:label="viewing_content"
+        tools:layout="@layout/viewing_content" >
+        <action
+            android:id="@+id/action_viewingContent_to_contentMain"
+            app:destination="@id/contentMain" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="По умолчанию" />
+        <argument
+            android:name="extraDescription"
+            app:argType="string"
+            android:defaultValue="По умолчанию" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentMain"
+        android:name="com.example.todo_list.screens.ContentMain"
+        android:label="content_main"
+        tools:layout="@layout/content_main">
+        <action
+            android:id="@+id/action_contentMain_to_addingContent"
+            app:destination="@id/addingContent" />
+        <action
+            android:id="@+id/action_contentMain_to_viewingContent"
+            app:destination="@id/viewingContent" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="По умолчанию" />
+        <argument
+            android:name="extraDescription"
+            app:argType="string"
+            android:defaultValue="По умолчанию" />
+    </fragment>
+    <fragment
+        android:id="@+id/addingContent"
+        android:name="com.example.todo_list.screens.AddingContent"
+        android:label="adding_content"
+        tools:layout="@layout/adding_content" >
+        <action
+            android:id="@+id/action_addingContent_to_contentMain"
+            app:destination="@id/contentMain" />
+    </fragment>
+</navigation>
